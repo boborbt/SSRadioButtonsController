@@ -78,7 +78,7 @@ class SSRadioButtonsController : NSObject
         buttonsArray = aButtonsArray
     }
 
-    func pressed(_ sender: UIButton) {
+    @objc func pressed(_ sender: UIButton) {
         var currentSelectedButton: UIButton? = nil
         if(sender.isSelected) {
             if shouldLetDeSelect {
